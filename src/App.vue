@@ -3,7 +3,7 @@
   <Members class-card="" />
   <Main />
 </template>
-<script setup>
+<script lang="ts" setup>
 import Header from "./components/Header.vue";
 import Members from "./components/Members.vue";
 import Main from "./pages/Main.vue";

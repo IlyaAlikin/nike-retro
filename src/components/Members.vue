@@ -6,7 +6,7 @@
     </div>
   </section>
 </template>
-<script setup>
+<script lang="ts" setup>
 defineProps({
   classCard: String,
 });

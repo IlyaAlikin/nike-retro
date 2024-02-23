@@ -32,7 +32,7 @@
     </div>
   </div>
 </template>
-<script setup>
+<script lang="ts" setup>
 defineProps({
   slideColor: String,
   // primatyDecorColor: String,

@@ -143,10 +143,10 @@
     </div>
   </header>
 </template>
-<script setup>
+<script lang="ts" setup>
 function openMenu() {
-  let burger = document.getElementById("burger");
-  let menu = document.getElementById("headerList");
+  let burger: any = document.getElementById("burger");
+  let menu: any = document.getElementById("headerList");
 
   burger.classList.toggle("active");
   menu.classList.toggle("active");

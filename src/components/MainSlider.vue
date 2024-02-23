@@ -22,7 +22,7 @@
     </swiper>
   </section>
 </template>
-<script setup>
+<script lang="ts" setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import MainSliderSlide from "./MainSliderSlide.vue";
 import { Pagination } from "swiper/modules";

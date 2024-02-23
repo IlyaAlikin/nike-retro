@@ -1,7 +1,7 @@
 <template>
   <MainSlider />
 </template>
-<script setup>
+<script lang="ts" setup>
 import MainSlider from "../components/MainSlider.vue";
 </script>
 <style></style>
