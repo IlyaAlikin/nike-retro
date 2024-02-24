@@ -36,6 +36,19 @@ h6 {
   text-transform: uppercase;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b4b3;
+  border-radius: 4px;
+}
+
 [class*="__container"] {
   max-width: 1355px;
   padding: 0px 15px;
