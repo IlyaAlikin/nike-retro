@@ -72,6 +72,28 @@ h6 {
   text-decoration: underline;
   font-size: clamp(16px, 1.5vw, 20px);
 }
+
+.swiper-pagination {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  padding: 1px 22px;
+  margin: 0px 7px !important;
+  border-radius: 10px !important;
+  width: auto;
+  height: 6px !important;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  background: rgba(256, 256, 256, 1) !important;
+}
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   .title-section {
     align-items: end;

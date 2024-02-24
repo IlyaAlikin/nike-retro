@@ -3,7 +3,6 @@
     <swiper
       :slides-per-view="1"
       :space-between="50"
-      @swiper="onSwiper"
       :modules="modules"
       :pagination="{
         clickable: true,
@@ -33,16 +32,11 @@ import "swiper/css/pagination";
 const modules = [Pagination];
 </script>
 <style scoped>
-.swiper-pagination {
-  position: relative;
-}
 .slide-main-slider__container {
   position: relative;
-  /* z-index: 10; */
 }
 
 .column-text__title {
   position: relative;
-  /* z-index: 10; */
 }
 </style>
