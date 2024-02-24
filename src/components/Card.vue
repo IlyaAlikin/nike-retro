@@ -2,9 +2,9 @@
   <div class="card">
     <div class="card__img">
       <img :src="imageUrl" alt="" />
-      <div class="card__like">
+      <button class="card__like">
         <img :src="isFavorite ? '/favorite.svg' : '/unfavorite.svg'" alt="" />
-      </div>
+      </button>
     </div>
     <div class="card__description description-card">
       <div class="description-card__name">
@@ -52,8 +52,6 @@ defineProps({
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-}
-.description-card {
 }
 .description-card__name {
   font-size: 20px;
