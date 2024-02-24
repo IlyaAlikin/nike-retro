@@ -64,7 +64,6 @@ defineProps({
 .column-text {
   flex: 1 0 571px;
   position: relative;
-  /* z-index: 0; */
 }
 
 .column-text__title {
