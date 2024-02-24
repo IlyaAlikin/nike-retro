@@ -1,5 +1,5 @@
 <template>
-  <button @click="openDrawer()" class="drawer-open">
+  <button @click="openCart()" class="drawer-open">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="34"
@@ -51,44 +51,75 @@
     </svg>
   </button>
   <div class="drawer">
-    <div class="drawer__body">
-      <div class="drawer__header">
-        <h3 class="drawer__title">Cart</h3>
-        <font-awesome-icon icon="fa-solid fa-house" />
-        <button class="drawer__close-btn"></button>
+    <div class="drawer__body" id="cart">
+      <div class="drawer__container">
+        <div class="drawer__header">
+          <button @click="openCart()" class="drawer__close-btn">
+            <font-awesome-icon icon="fa-solid fa-arrow-left" />
+          </button>
+          <h3 class="drawer__title">Cart</h3>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
-const openDrawer = () => {
-  console.log("sdfdf");
+const openCart = () => {
+  let cart: any = document.getElementById("cart");
+  let body: any = document.getElementsByTagName("body");
+  let drawer: any = document.getElementsByClassName("drawer");
+
+  cart?.classList.toggle("active");
+  drawer[0]?.classList.toggle("active");
+  body[0]?.classList.toggle("lock");
 };
 </script>
 <style scoped>
 .drawer {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -150%;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.drawer.active {
+  right: 0;
+}
+
+.drawer__container {
+  padding: 25px 20px;
 }
 .drawer__body {
   position: fixed;
   top: 0;
-  right: 0;
   display: block;
   z-index: 10;
   width: 380px;
   height: 100vh;
+  right: -100%;
   background-color: #fff;
+  transition: all 0.3s ease;
 }
+
+.drawer__body.active {
+  right: 0;
+}
+
 .drawer__header {
+  display: flex;
+  gap: 30px;
 }
 .drawer__title {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  text-transform: none;
 }
 .drawer__close-btn {
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .drawer-open {
