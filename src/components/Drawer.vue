@@ -54,6 +54,7 @@
     <div class="drawer__body">
       <div class="drawer__header">
         <h3 class="drawer__title">Cart</h3>
+        <font-awesome-icon icon="fa-solid fa-house" />
         <button class="drawer__close-btn"></button>
       </div>
     </div>
@@ -66,8 +67,22 @@ const openDrawer = () => {
 </script>
 <style scoped>
 .drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
-.drawer__container {
+.drawer__body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  z-index: 10;
+  width: 380px;
+  height: 100vh;
+  background-color: #fff;
 }
 .drawer__header {
 }

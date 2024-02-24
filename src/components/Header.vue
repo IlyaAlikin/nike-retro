@@ -289,7 +289,7 @@ const openMenu = () => {
     width: 26px;
     height: 20px;
     position: relative;
-    z-index: 5;
+    z-index: 4;
     display: flex;
     align-items: center;
     justify-content: center;
