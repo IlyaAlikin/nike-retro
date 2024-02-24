@@ -147,7 +147,9 @@
 function openMenu() {
   let burger: any = document.getElementById("burger");
   let menu: any = document.getElementById("headerList");
+  let body: any = document.getElementsByTagName("body");
 
+  body[0].classList.toggle("lock");
   burger.classList.toggle("active");
   menu.classList.toggle("active");
 }

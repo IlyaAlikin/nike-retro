@@ -21,6 +21,11 @@ body {
 #app {
   font-family: "Inter", sans-serif;
 }
+
+body.lock {
+  overflow-y: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -28,6 +33,7 @@ h4,
 h5,
 h6 {
   font-family: "Anton", sans-serif;
+  text-transform: uppercase;
 }
 
 [class*="__container"] {
