@@ -59,13 +59,13 @@
           </button>
           <h3 class="drawer__title">Cart</h3>
         </div>
-        <CartItem />
+        <CartList />
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
-import CartItem from "./CartItem.vue";
+import CartList from "./CartItemList.vue";
 const openCart = () => {
   let cart: any = document.getElementById("cart");
   let body: any = document.getElementsByTagName("body");
