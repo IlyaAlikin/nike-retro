@@ -59,11 +59,13 @@
           </button>
           <h3 class="drawer__title">Cart</h3>
         </div>
+        <CartItem />
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import CartItem from "./CartItem.vue";
 const openCart = () => {
   let cart: any = document.getElementById("cart");
   let body: any = document.getElementsByTagName("body");
@@ -97,9 +99,9 @@ const openCart = () => {
   top: 0;
   display: block;
   z-index: 10;
-  width: 380px;
+  width: 500px;
   height: 100vh;
-  right: -100%;
+  right: -120%;
   background-color: #fff;
   transition: all 0.3s ease;
 }
@@ -111,6 +113,7 @@ const openCart = () => {
 .drawer__header {
   display: flex;
   gap: 30px;
+  margin-bottom: 30px;
 }
 .drawer__title {
   font-size: 40px;

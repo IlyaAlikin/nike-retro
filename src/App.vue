@@ -4,7 +4,7 @@
   <Main />
 </template>
 <script lang="ts" setup>
-import Header from "./components/Header.vue";
+import Header from "./components/header/Header.vue";
 import Members from "./components/Members.vue";
 import Main from "./pages/Main.vue";
 </script>

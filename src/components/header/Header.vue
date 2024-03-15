@@ -5,7 +5,7 @@
         <div class="header__menu">
           <div class="header__column logo-column">
             <div class="header__logo">
-              <img src="../assets/img/logo.svg" alt="" />
+              <img src="../../assets/img/logo.svg" alt="" />
             </div>
           </div>
           <div class="header__column">

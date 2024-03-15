@@ -27,6 +27,10 @@ body.lock {
   overflow-y: hidden;
 }
 
+button {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
