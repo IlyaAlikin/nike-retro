@@ -60,6 +60,16 @@
           <h3 class="drawer__title">Cart</h3>
         </div>
         <CartList />
+        <div class="summary">
+          <div class="summary__row">
+            <div class="price">Full price:</div>
+            <div class="price__amount">1200</div>
+          </div>
+          <div class="summary__row">
+            <div class="price">Delivery 5%:</div>
+            <div class="price__amount">120</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -129,5 +139,22 @@ const openCart = () => {
   display: block;
   position: relative;
   cursor: pointer;
+}
+
+.summary {
+  margin-top: 20px;
+}
+.summary__row {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.price__amount {
+  font-weight: 600;
 }
 </style>
