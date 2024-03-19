@@ -39,4 +39,24 @@
 .close-icon {
   font-size: 18px;
 }
+
+@media (max-width: 565px) {
+  .cart-item__name {
+    font-size: 16px;
+  }
+
+  .cart-item__img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 374px) {
+  .cart-item__img {
+    max-width: 100px;
+  }
+
+  .cart-item__name {
+    font-size: 14px;
+  }
+}
 </style>

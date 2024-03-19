@@ -71,6 +71,7 @@ h6 {
 
 .section__title {
   font-size: clamp(40px, 5vw, 60px);
+  line-height: 100%;
 }
 
 .title-section__link {

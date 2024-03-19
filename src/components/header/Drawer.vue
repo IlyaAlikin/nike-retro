@@ -179,4 +179,31 @@ const openCart = () => {
   font-weight: 600;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .drawer__body {
+    max-width: none;
+    width: 100%;
+  }
+
+  .drawer__title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 565px) {
+  .drawer__container {
+    padding: 20px 10px;
+  }
+
+  .drawer__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 374px) {
+  .drawer__title {
+    font-size: 32px;
+  }
+}
 </style>
