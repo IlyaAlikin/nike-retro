@@ -1,9 +1,9 @@
 <template>
   <MainSlider />
-  <NewArrivals />
+  <MainNewArrivals />
 </template>
 <script lang="ts" setup>
 import MainSlider from "@/components/MainSlider.vue";
-import NewArrivals from "@/components/NewArrivals.vue";
+import MainNewArrivals from "@/components/MainNewArrivals.vue";
 </script>
 <style></style>

@@ -7,7 +7,10 @@
       <div class="new-arrivals__filters"></div>
       <div class="new-arrivals__products"></div>
     </div>
+    <CardList />
   </div>
 </template>
-<script setup></script>
+<script setup>
+import CardList from "../components/CardList.vue";
+</script>
 <style scoped></style>
