@@ -60,14 +60,19 @@
           <h3 class="drawer__title">Cart</h3>
         </div>
         <CartList />
-        <div class="summary">
-          <div class="summary__row">
-            <div class="price">Full price:</div>
-            <div class="price__amount">1200</div>
+        <div class="drawer__footer">
+          <div class="summary">
+            <div class="summary__row">
+              <div class="price">Full price:</div>
+              <div class="price__amount">1200</div>
+            </div>
+            <div class="summary__row">
+              <div class="price">Delivery 5%:</div>
+              <div class="price__amount">120</div>
+            </div>
           </div>
-          <div class="summary__row">
-            <div class="price">Delivery 5%:</div>
-            <div class="price__amount">120</div>
+          <div class="make-an-order">
+            <div class="make-an-order__btn">Make an order</div>
           </div>
         </div>
       </div>
@@ -103,6 +108,9 @@ const openCart = () => {
 
 .drawer__container {
   padding: 25px 20px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .drawer__body {
   position: fixed;
@@ -141,20 +149,34 @@ const openCart = () => {
   cursor: pointer;
 }
 
+.drawer__footer {
+  margin-top: auto;
+}
+
 .summary {
   margin-top: 20px;
 }
 .summary__row {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 9px;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 .price__amount {
   font-weight: 600;
+}
+
+.make-an-order {
+  margin-top: 10px;
+}
+.make-an-order__btn {
+  background: #72b778;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 </style>
