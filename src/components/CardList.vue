@@ -2,36 +2,11 @@
   <div class="card-list">
     <div class="card-list__wrapper">
       <Card
-        imageUrl="/sneakers/sneakers-1.png"
-        name="Air Jordan 1 Retro Low Voodoo"
-        description="Men’s shoes"
-        :price="379.99"
-        :isFavorite="true"
-      />
-      <Card
-        imageUrl="/sneakers/sneakers-1.png"
-        name="Air Jordan 1 Retro Low Voodoo"
-        description="Men’s shoes"
-        :price="379.99"
-        :isFavorite="true"
-      />
-      <Card
-        imageUrl="/sneakers/sneakers-1.png"
-        name="Air Jordan 1 Retro Low Voodoo"
-        description="Men’s shoes"
-        :price="379.99"
-        :isFavorite="true"
-      /><Card
-        imageUrl="/sneakers/sneakers-1.png"
-        name="Air Jordan 1 Retro Low Voodoo"
-        description="Men’s shoes"
-        :price="379.99"
-        :isFavorite="true"
-      /><Card
-        imageUrl="/sneakers/sneakers-1.png"
-        name="Air Jordan 1 Retro Low Voodoo"
-        description="Men’s shoes"
-        :price="379.99"
+        v-for="item in items"
+        :name="item.title"
+        :key="item.id"
+        :price="item.price"
+        :imageUrl="item.imageUrl"
         :isFavorite="true"
       />
     </div>
@@ -39,6 +14,10 @@
 </template>
 <script setup>
 import Card from "./Card.vue";
+
+defineProps({
+  items: Array,
+});
 </script>
 <style scoped>
 .card-list__wrapper {

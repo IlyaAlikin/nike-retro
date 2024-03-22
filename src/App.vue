@@ -9,5 +9,11 @@ import Header from "./components/header/Header.vue";
 import Members from "./components/Members.vue";
 import Main from "./pages/Main.vue";
 import NewArrivals from "./pages/NewArrivals.vue";
+
+import { onMounted } from "vue";
+
+onMounted(() => {
+  console.log("qwweq31");
+});
 </script>
 <style scoped></style>
