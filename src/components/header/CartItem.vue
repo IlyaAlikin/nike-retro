@@ -3,7 +3,7 @@
     <img src="/sneakers/sneakers-1.png" alt="" class="cart-item__img" />
     <div class="cart-item__text">
       <div class="cart-item__name">Air Jordan 1 Retro Low Voodoo</div>
-      <div class="cart-item__price">379.99€</div>
+      <div class="cart-item__price">379.99</div>
     </div>
     <button class="cart-item__remove">
       <font-awesome-icon icon="fa-solid fa-xmark" class="close-icon" />
